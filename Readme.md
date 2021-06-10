@@ -2,6 +2,10 @@
 
 Fork de https://github.com/SNCFdevelopers/Pypixgrid pour des données statique et pour python 3.
 
+Exemple de réalisation utilisant des données produitent avec pypixgrid
+
+- https://www.comeetie.fr/galerie/francepixelsbati
+- https://www.comeetie.fr/galerie/francepixels2019
 
 *Pypixgrid* est un script python qui permet de générer des tuiles vectorielles pour l'exploration de jeux de données massifs.
 
@@ -110,7 +114,7 @@ Dans les deux cas de figures, des méta-données sont générées automatiquemen
 
 ## Dépendances
 
-python 2.7, postgres, postgis
+python 3, postgres, postgis
 
 librairies python :
 
