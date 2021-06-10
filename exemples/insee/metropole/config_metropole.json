@@ -1,0 +1,59 @@
+{
+    "pg_connection": {
+        "user": "come",
+        "dbname": "metropole",
+        "host": "localhost",
+        "password": "XXX"
+    },
+    "data_format": {
+        "geom_table": "car_data",
+        "geom_column": "wkb_geometry",
+        "row_column": "i",
+        "col_column": "j",
+        "context_variables": [{
+            "name": "pop",
+            "aggregation": "SUM"
+        },{
+	    "name":"rev", 
+	    "aggregation": "SUM"
+	},{
+	    "name": "m25ans",  
+	    "aggregation": "SUM"
+	},{
+	    "name":"p65ans", 
+	    "aggregation": "SUM"
+	},{
+	    "name":"men_basr", 
+	    "aggregation": "SUM"
+	},{
+	    "name": "men", 
+	    "aggregation": "SUM"
+	},{
+	    "name":"men_coll",
+	    "aggregation": "SUM"
+	},{
+	    "name":"men_prop", 
+	    "aggregation": "SUM"
+	}]
+    },
+    "scale_operations": [
+        [11, 1],
+        [10, 2],
+        [9, 2],
+        [8, 2],
+        [7, 2],
+	[6, 2],
+	[5,2],
+	[4,2]
+    ],
+    "output": {
+        "layername": "inseedata",
+        "format": "pbf",
+        "storage": "mbtiles",
+        "verbose": false,
+        "nbquantiles": 9
+    }
+}
+
+
+

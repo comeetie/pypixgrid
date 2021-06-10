@@ -1,0 +1,42 @@
+{
+    "pg_connection": {
+        "user": "postgres",
+        "dbname": "fake",
+        "host": "localhost",
+        "password": "XXX"
+    },
+    "data_format": {
+        "geom_table": "carreaux",
+        "geom_column": "geom",
+        "row_column": "row",
+        "col_column": "col",
+        "context_variables": [{
+            "name": "pop",
+            "aggregation": "SUM"
+        },{
+	    "name":"rev", 
+	    "aggregation": "SUM"
+	}]
+    },
+    "scale_operations": [
+        [14, 1],
+        [13, 2],
+        [12, 2],
+        [11, 2],
+        [10, 2],
+        [9, 2],
+        [8, 2],
+        [7, 2],
+	[6, 2]
+    ],
+    "output": {
+        "layername": "fakedata",
+        "format": "pbf",
+        "storage": "mbtiles",
+        "verbose": false,
+        "nbquantiles": 5
+    }
+}
+
+
+
